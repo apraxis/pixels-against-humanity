@@ -1,0 +1,22 @@
+* {
+  @include box-sizing(border-box);
+}
+
+body {
+  font-size: 100%;
+  font-family: $body-font-family;
+  &:before, &:after {
+    display: none !important;
+  }
+}
+
+p, li {
+  color: $body-color;
+}
+
+a {
+  color: $link-color;
+  &:hover {
+    cursor: pointer;
+  }
+}

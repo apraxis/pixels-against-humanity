@@ -1,0 +1,51 @@
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+}
+
+p, li {
+  margin-top: 0;
+  font-family: $body-font-family;
+  font-weight: $body-font-weight;
+}
+
+h1 {
+    font-size: (48 / 16) + em;
+    line-height: (48 / 48) + em;
+    margin-bottom: (24 / 48) + em;
+}
+h2 {
+    font-size: (36/16) + em;
+    line-height: (48 / 36) + em;
+    margin-bottom: (24 / 36) + em;
+}
+h3 {
+    font-size: (24 / 16) + em;
+    line-height: (24 / 24) + em;
+    margin-bottom: (24 / 24) + em;
+}
+h4 {
+    font-size: (21 / 16) + em;
+    line-height: (24 / 21) + em;
+    margin-bottom: (24 / 21) + em;
+}
+h5 {
+    font-size: (18 / 16) + em;
+    line-height: (24 / 18) + em;
+    margin-bottom: (24 / 18) + em;
+}
+h6 {
+    font-size: (16 / 16) + em;
+    line-height: (24 / 16) + em;
+    margin-bottom: (24 / 16) + em;
+}
+p {
+    font-size: (16 / 16) + em;
+    line-height: (24 / 16) + em;
+    margin-bottom: (24 / 16) + em;
+}
+
+li {
+  line-height: (24 / 16) + em;
+}

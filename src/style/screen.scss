@@ -1,0 +1,47 @@
+// This file is a manifest. Only imports should exist in this file
+// except for the scratchpad section on the bottom (which should
+// eventually be refactored out of the file into its appropriate place).
+//
+// Also, components should follow a naming convention. Class, .scss & .haml
+// names should be the same. Example: .top-bar class should live in
+// /src/style/components/_top-bar.scss and
+// /src/structure/components/_top-bar.haml files.
+
+@charset "utf-8";
+
+// google fonts
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,300,600);
+
+// Use compass for mixins and other cross-browser front-end solutions
+// docs: http://compass-style.org
+@import "compass";
+@import "compass/css3";
+
+@import "susy"; // grid math gem
+@import "breakpoint"; // media-query mixins
+
+// Sort of like reset but more modern and sensible
+@import "normalize"; // v3.0.1
+
+// 3rd party stuff
+@import "vendor/font-awesome"; // icon fonts (http://fontawesome.io)
+
+// Partials
+@import "variables"; // Colors, measurments, base fonts, etc.
+@import "helpers"; // style class hacks
+
+// Base HTML styles (Tables, Forms, Lists, Headings/Type)
+@import "base/html-body";
+@import "base/typography";
+
+// Components like buttons, labels, topbar
+// @import "components/";
+
+// Sections and Pages
+// @import "regions/";
+
+// =======================================================================
+// Scratchpad: a CSS playground or "inbox" to be refactored later.
+// =======================================================================
+
+

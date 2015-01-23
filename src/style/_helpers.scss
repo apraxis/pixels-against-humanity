@@ -1,0 +1,98 @@
+
+// Text align classes
+@each $align in left, center, right, justify {
+  .text-#{$align} {
+    text-align: $align;
+  }
+}
+
+// Display classes
+@each $display in inline, inline-block, block, hidden, none {
+  .#{$display} {
+    display: $display;
+  }
+}
+
+// .none makes no sense
+.hide {
+  @extend .none;
+}
+
+// clearfix
+.clearfix {
+  @include pie-clearfix;
+}
+
+// floats
+@each $direction in right, left {
+  .float-#{$direction} {
+    float: $direction;
+  }
+}
+
+@each $semantic-type, $semantic-color in $semantic-colors {
+  .text-#{$semantic-type} {
+    color: $semantic-color;
+  }
+}
+
+// Inline font shrinking classes. Pro tip: use with text colors :)
+span {
+  &.small {
+    font-size: .75em;
+  }
+  &.tiny {
+    font-size: .5em;
+  }
+}
+
+// apply global border-radius ($corner-radius)
+.radius {
+  border-radius: $corner-radius;
+}
+
+// highlight text
+.highlighter {
+  background: $highlighter-color;
+  @each $semantic-type, $semantic-color in $semantic-colors {
+    &.#{$semantic-type} {
+      background: lighten($semantic-color, 35%);
+    }
+  }
+}
+
+// layout divs
+.fluid-container {
+  @include container(100%);
+  padding: 10px;
+}
+
+%half-span {
+  @include span(6 of 12 no-gutter);
+}
+
+%third-span {
+  @include span(3 of 12 no-gutter);
+}
+
+%two-thirds-span {
+  @include span(9 of 12 no-gutter);
+}
+
+@each $side in right, left {
+  .#{$side}-half {
+    @extend %half-span;
+  }
+  .#{$side}-third {
+    @extend %third-span;
+  }
+  .#{$side}-two-thirds {
+    @extend %two-thirds-span;
+  }
+}
+
+.push-top {
+  margin-top: 2em;
+}
+
+

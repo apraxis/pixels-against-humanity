@@ -1,0 +1,47 @@
+// Color definitions
+
+// Greyscale
+$white: #fff;
+$ghost: #f4f6f9;
+$light-grey: #ebebeb;
+$grey: #ccc;
+$slate: #778899;
+$charcoal: #555;
+$oil: #32383e;
+$black: #000;
+
+// Semantic Colors
+$primary-color: #2D99D3;
+$secondary-color: #9CAFBE;
+$success-color: #2dd377;
+$warning-color: #FFC274;
+$error-color: #ee3f58;
+$highlighter-color: #fffeee;
+
+// Sass map of semantic colors
+$semantic-colors: (
+  secondary: $secondary-color,
+  error: $error-color,
+  warning: $warning-color,
+  primary: $primary-color,
+  success: $success-color
+);
+
+// Application Colors
+$body-bg: $white;
+$body-color: $slate;
+$link-color: $primary-color;
+$border-color: $light-grey;
+
+// Global border radius
+$round-radius: 50%;
+$corner-radius: 4px;
+
+// Font stacks
+$heading-font-family: "Open Sans", "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+$body-font-family: "Open Sans", "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+
+// Font weights
+$heading-font-weight: 600;
+$body-font-weight: 300;
+
