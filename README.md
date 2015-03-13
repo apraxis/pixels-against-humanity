@@ -11,7 +11,7 @@ generator. jRuby 1.7.17 is required.
 To run middleman and make templates/styles:
 
 ```
-Gem install bundler
+gem install bundler
 bundle install
 bundle exec middleman
 ```
