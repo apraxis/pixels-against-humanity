@@ -20,3 +20,5 @@
 .DS_Store
 
 /target/*
+/.lein-repl-history
+/.nrepl-port
