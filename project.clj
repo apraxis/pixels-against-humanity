@@ -18,7 +18,7 @@
   :plugins [[org.apraxis/apraxis "0.0.1-SNAPSHOT"]
             [lein-cljsbuild "1.0.4"]]
   :cljsbuild {:builds [{:id "dev"
-                        :source-paths ["src/client/components"]
+                        :source-paths ["src/client/components" "../apraxis/src/cljs"]
                         :compiler {:output-to "target/apraxis-js/js/pixels_against_humanity_client.js"
                                    :output-dir "target/apraxis-js/js/out"
                                         ;:libs ["target/middleman/build"]
