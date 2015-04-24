@@ -3,6 +3,7 @@
             [io.pedestal.http.route :as route]
             [io.pedestal.http.body-params :as body-params]
             [io.pedestal.http.route.definition :refer [expand-routes]]
+            [io.pedestal.http.ring-middlewares :refer [resource]]
             [apraxis.service :as aservice]
             [ring.util.response :as ring-resp]))
 
@@ -10,9 +11,10 @@
   []
   (expand-routes
    `[[["/dev" {:get aservice/dev-index}
-       ["/*dev-route" {:get aservice/dev-service}]]]]))
+       ["/*dev-route" {:get aservice/dev-service}]]
+      ["/js/*grob-gob-glob-grod" {:get ~(resource "")}]]]))
 
-;; Consumed by pixels-against-humanity2.server/create-server
+;; Consumed by pixels-against-humanity.server/create-server
 ;; See bootstrap/default-interceptors for additional options you can configure
 (defn service
   []
@@ -22,7 +24,7 @@
    ;; dev-mode. If you do, many other keys for configuring
    ;; default interceptors will be ignored.
    ;; :bootstrap/interceptors []
-   ::bootstrap/routes #(routes)
+   ::bootstrap/routes routes
 
    ;; Uncomment next line to enable CORS support, add
    ;; string(s) specifying scheme, host and port for
