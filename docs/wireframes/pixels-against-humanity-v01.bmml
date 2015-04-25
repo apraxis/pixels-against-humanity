@@ -423,7 +423,7 @@
         <bold>false</bold>
         <color>6710886</color>
         <size>24</size>
-        <text>ENTER%20NAME</text>
+        <text>YOUR%20NAME</text>
       </controlProperties>
     </control>
     <control controlID="70" controlTypeID="com.balsamiq.mockups::HRule" x="424" y="1241" w="299" h="-1" measuredW="100" measuredH="10" zOrder="65" locked="false" isInGroup="-1">
@@ -2398,7 +2398,7 @@
         <bold>false</bold>
         <color>6710886</color>
         <size>24</size>
-        <text>ENTER%20NAME</text>
+        <text>YOUR%20NAME</text>
       </controlProperties>
     </control>
     <control controlID="479" controlTypeID="com.balsamiq.mockups::HRule" x="2078" y="492" w="299" h="-1" measuredW="100" measuredH="10" zOrder="260" locked="false" isInGroup="-1">
