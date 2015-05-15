@@ -11,7 +11,7 @@
   {[:.balls] (content (pr-str val))}
   {:resource-wrapper :mini-html})
 
-(defn test-component
+(defn ^:export test-component
   [props owner]
   (reify
     om/IRender
