@@ -1,0 +1,56 @@
+.buttons {
+  margin: 1em 0;
+  .button {
+    margin-right: 1em;
+  }
+}
+
+.button {
+  border-radius: 6px;
+  padding: 1em 2em;
+  display: inline-block;
+  background: transparent;
+  border: 3px solid #fff;
+  text-transform: uppercase;
+  vertical-align: middle;
+  &.alert {
+    background: $error-color;
+    color: #fff;
+    border-color: $error-color;
+  }
+  &.success {
+    border-color: $success-color;
+    color: $success-color;
+  }
+  &.secondary {
+    border-color: $charcoal;
+    color: $charcoal;
+  }
+  &.exit {
+    font-size: .5em;
+    padding: .5em .75em;
+    border-color: $error-color;
+    border-radius: 3px;
+    color: $error-color;
+  }
+  &.icon {
+    text-align: center;
+    font-size: .7em;
+    padding: 20px;
+    @extend .icon;
+    &:before {
+      color: #fff;
+      display: block;
+      font-size: 5em;
+      line-height: 1em;
+      padding: 0;
+      margin: .25em 0;
+    }
+    &.monitor {
+      @include icon-font($desktop);
+    }
+    &.person {
+      @include icon-font($child);
+    }
+  }
+}
