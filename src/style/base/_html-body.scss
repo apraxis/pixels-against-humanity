@@ -5,6 +5,8 @@
 body {
   font-size: 100%;
   font-family: $body-font-family;
+  background: #000;
+  color: #fff;
   &:before, &:after {
     display: none !important;
   }
