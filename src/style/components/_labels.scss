@@ -1,0 +1,16 @@
+.label {
+  border-radius: 3px;
+  padding: 5px 15px;
+  font-size: .8em;
+  color: #000;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 1em;
+  background-color: $charcoal;
+  &.alert {
+    background-color: $warning-color;
+  }
+  &.success {
+    background-color: $success-color;
+  }
+}
