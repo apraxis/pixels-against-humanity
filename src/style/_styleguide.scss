@@ -1,0 +1,36 @@
+body.styleguide {
+  @each $tag in h1, h2, h3, h4 {
+    #{$tag} {
+      .tag:after {
+        font-size: .6em;
+        color: $secondary-color;
+        content: "(#{$tag})";
+        display: inline-block;
+        margin-left: .5em;
+      }
+    }
+
+  }
+  h2.section-label {
+    color: $primary-color;
+    font-size: 1em;
+    margin-top: 50px;
+    font-weight: normal;
+  }
+  h3 span {
+    display: block;
+    line-height: 1.3em;
+  }
+  hr {
+    border: none;
+    background: $charcoal;
+    height: 1px;
+    margin: 30px 0;
+  }
+  section {
+    margin-bottom: 70px;;
+  }
+  .cards {
+    margin-bottom: 40px;
+  }
+}

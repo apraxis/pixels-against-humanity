@@ -1,5 +1,75 @@
 ---
 title: Pixels Against Humanity (Styleguide)
+page_class: styleguide
 ---
 
-%h1 Derp!
+.container
+  %h2.section-label Typography
+  %section
+    %h1
+      Pixels Against Humanity
+      %span.tag
+    %h2
+      XB54M9
+      %span.tag
+    %h3
+      %span A party game
+      %span for horrible people
+      %span.tag with technology.
+    %h4
+      What's there a ton of in Heaven?
+      %span.tag
+    %h5
+      Game id
+      %span.tag
+  %hr
+
+  %h2.section-label Labels
+  %section
+    .label.alert You are the Tzar
+    .label.success Daemian
+    .label 3
+  %hr
+
+  %h2.section-label Buttons
+  %button.button.alert Start New Game
+  .buttons
+    %button.button Join Game
+    %button.button.success Play
+    %button.button.secondary Play
+    %button.button.exit Leave game
+  %hr
+
+  %h2.section-label Icon & Text Buttons
+  %section
+    .buttons
+      .button.secondary.icon.monitor SET UP AS SHARED MONITOR
+      .button.secondary.icon.person SET UP AS PLAYER
+  %hr
+
+  %h2.section-label Inputs
+  %section
+    .inputs
+      %label.text-center
+        %input(type="text" placeholder="Your Name")
+      %label.text-center
+        %input.focus(type="text" placeholder="Your Name")
+    .inputs
+      %label.text-center
+        Your Name
+        %input(type="text" placeholder="Your Name" value="Don Miguel")
+      %label.text-center
+        %input.focus(type="text" placeholder="Your Name" value="Don Miguel")
+  %hr
+
+  %h2.section-label Cards
+  %section
+    .cards
+      = partial "structure/components/card", locals: {class_name: "", content: "What's there a ton of in Heaven?"}
+      = partial "structure/components/card", locals: {class_name: "winner", content: "Lance Armstrong's missing testicle."}
+    .cards.pile
+      = partial "structure/components/card", locals: {class_name: "answer", content: "Christopher Walken."}
+      = partial "structure/components/card", locals: {class_name: "answer selected", content: "Lance Armstrong's missing testicle."}
+      = partial "structure/components/card", locals: {class_name: "waiting", content: "Waiting on 1 more..."}
+
+

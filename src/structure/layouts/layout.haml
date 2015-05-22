@@ -7,5 +7,5 @@
     / Use title if it's in the page YAML frontmatter
     %title= current_page.data.title || "Pixels Against Humanity"
     = stylesheet_link_tag "screen"
-  %body{class: page_classes}
+  %body{class: current_page.data.page_class || page_classes}
     = yield

@@ -9,9 +9,6 @@
 
 @charset "utf-8";
 
-// google fonts
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,300,600);
-
 // Use compass for mixins and other cross-browser front-end solutions
 // docs: http://compass-style.org
 @import "compass";
@@ -33,15 +30,19 @@
 // Base HTML styles (Tables, Forms, Lists, Headings/Type)
 @import "base/html-body";
 @import "base/typography";
+@import "base/forms";
+@import "base/layout";
 
 // Components like buttons, labels, topbar
-// @import "components/";
+@import "components/labels";
+@import "components/buttons";
+@import "components/card";
 
 // Sections and Pages
 // @import "regions/";
 
 // styleguide styles
-//@import 'styleguide';
+@import 'styleguide';
 
 // =======================================================================
 // Scratchpad: a CSS playground or "inbox" to be refactored later.
