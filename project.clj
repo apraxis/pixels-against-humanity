@@ -14,7 +14,10 @@
                  [om "0.8.0-alpha1"]
                  [kioo "0.4.1-SNAPSHOT" :exclusions [com.keminglabs/cljx]]]
   :source-paths ["src/service" "src/client/components"]
-  :resource-paths ["target/middleman/build" "target/apraxis-js" "../apraxis/resources"]
+  :resource-paths ["target/middleman/build"
+                   "target/apraxis-js"
+                   "../apraxis/resources"
+                   "resources"]
   :plugins [[org.apraxis/apraxis "0.0.1-SNAPSHOT"]
             [lein-cljsbuild "1.0.4"]]
   :cljsbuild {:builds [{:id "dev"

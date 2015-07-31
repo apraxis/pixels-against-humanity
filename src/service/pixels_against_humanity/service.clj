@@ -10,9 +10,7 @@
 (defn routes
   []
   (expand-routes
-   `[[["/dev" {:get aservice/dev-index}
-       ["/*dev-route" {:get aservice/dev-service}]]
-      ["/js/*grob-gob-glob-grod" {:get ~(resource "")}]]]))
+   `[[["/js/*grob-gob-glob-grod" {:get ~(resource "")}]]]))
 
 ;; Consumed by pixels-against-humanity.server/create-server
 ;; See bootstrap/default-interceptors for additional options you can configure
