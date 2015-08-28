@@ -8,7 +8,7 @@
   "structure/components/test/index.html"
   [:#component-root :> any]
   [val]
-  {[:.balls] (content (pr-str val))}
+  {[:.content] (content (pr-str val))}
   {:resource-wrapper :mini-html})
 
 (defn ^:export test-component
