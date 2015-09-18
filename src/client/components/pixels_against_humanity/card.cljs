@@ -10,22 +10,12 @@
   "build/structure/components/card/index.html"
   [:#component-root :> any]
   [type answers selected winner cnt text]
-  {[self] (do->
-           (if (> (count text) 40)
-             (add-class "tiny-text")
-             identity)
-           (if (= :answer type)
-             (add-class "answer")
-             identity)
-           (if (= :waiting type)
-             (add-class "waiting")
-             identity)
-           (if selected
-             (add-class "selected")
-             identity)
-           (if winner
-             (add-class "winner")
-             identity))
+  {[self] #(cond-> %
+                   (> (count text) 40) (add-class "tiny-text")
+                   (= :answer type) (add-class "answer")
+                   (= :waiting type) (add-class "waiting")
+                   selected (add-class "selected")
+                   winner (add-class "winner")) 
    [:.content] (content (if (= :waiting type)
                           (gstring/format "Waiting on %d more..." cnt)
                           text))
