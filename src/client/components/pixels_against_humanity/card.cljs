@@ -28,7 +28,15 @@
              identity))
    [:.content] (content (if (= :waiting type)
                           (gstring/format "Waiting on %d more..." cnt)
-                          text))}
+                          text))
+   [:.instructions] (if (or (not= type :prompt)
+                            (< answers 2))
+                      (constantly nil)
+                      identity)
+   [:.instructions :.pick :span] (content answers)
+   [:.instructions :.draw] (if (= answers 3)
+                             identity
+                             (constantly nil))}
   {:resource-wrapper :mini-html})
 
 (defn ^:export card-component
@@ -36,4 +44,8 @@
   (reify
     om/IRender
     (render [_]
-      (card-template type answers selected winner count text))))
+      (let [prompt? (= type :prompt)
+            answers (if (and prompt? (nil? answers))
+                      1
+                      answers)]
+       (card-template type answers selected winner count text)))))

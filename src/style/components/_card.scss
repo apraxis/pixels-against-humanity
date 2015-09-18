@@ -9,6 +9,29 @@
     @extend h3;
     line-height: 1.3em;
   }
+  .instructions {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: bold;
+    .draw {
+      margin-bottom: 5px;
+    }
+    span.count {
+      color: #000;
+      background: #fff;
+      border-radius: 50%;
+      display: inline-block;
+      line-height: 20px;
+      vertical-align: middle;
+      height: 20px;
+      width: 20px;
+      margin-bottom: 3px;
+      text-align: center;
+    }
+  }
   &.tiny-text {
     .content {
       font-size: 1em;

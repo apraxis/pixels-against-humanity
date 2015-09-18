@@ -1,5 +1,4 @@
 {:type :prompt
- :answers 1
  :text "What's there a ton of in Heaven?"}
 
 {:type :prompt
@@ -7,43 +6,34 @@
  :text "That's right I killed []. How, you ask? []"}
 
 {:type :prompt
- :answers 1
  :text "Hannah Montana struggled with [] for the first time."}
 
 {:type :prompt
- :answers 1
  :text "[] kid-tested mother-approved."}
 
 {:type :prompt
- :answers 1
  :text "[]: good to the last drop."}
 
 {:type :prompt
- :answers 1
  :text "[]? There's an app for that."}
 
 {:type :prompt
- :answers 1
  :text "[]. Betcha can't have just one."}
 
 {:type :prompt
- :answers 1
  :text "[]. High five bro."}
 
 {:type :prompt
- :answers 1
  :text "[]. It's a trap!"}
 
 {:type :prompt
- :answers 1
  :text "[]. That's how I want to die."}
 
 {:type :prompt
- :answers 1
- :text "(Draw 2, Pick 3) [] + [] = []."}
+ :answers 3
+ :text "[] + [] = []."}
 
 {:type :prompt
- :answers 1
  :text "When the United States raced the Soviet Union to the moon, the Mexican government funneled millions of pesos into research on []."}
 
 {:type :answer
