@@ -2,10 +2,10 @@
   (:require [kioo.om :refer [content]]
             [om.core :as om]
             [om.dom :as dom])
-  (:require-macros [kioo.om :refer [defsnippet]]))
+  (:require-macros [apraxis.client.template :refer [defsnippet]]))
 
 (defsnippet test-template
-  "structure/components/test/index.html"
+  "build/structure/components/test/index.html"
   [:#component-root :> any]
   [val]
   {[:.content] (content (pr-str val))}

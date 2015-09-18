@@ -33,7 +33,7 @@
    ;;::bootstrap/allowed-origins ["scheme://host:port"]
 
    ;; Root for resource interceptor that is available by default.
-   ::bootstrap/resource-path "/public"
+   ::bootstrap/resource-path "/build"
 
    ;; Either :jetty, :immutant or :tomcat (see comments in project.clj)
    ::bootstrap/type :jetty

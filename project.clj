@@ -13,7 +13,7 @@
                  [om "0.8.0-alpha1"]
                  [kioo "0.4.1-SNAPSHOT" :exclusions [org.clojure/tools.reader com.keminglabs/cljx]]]
   :source-paths ["src/service" "src/client/components"]
-  :resource-paths ["target/middleman/build"
+  :resource-paths ["target/middleman"
                    "target/apraxis-js"
                    "../apraxis/resources"
                    "resources"]
