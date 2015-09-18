@@ -3,7 +3,8 @@
             [om.core :as om]
             [om.dom :as dom]
             [goog.string.format]
-            [goog.string :as gstring])
+            [goog.string :as gstring]
+            [clojure.string :as str])
   (:require-macros [apraxis.client.template :refer [defsnippet]]))
 
 (defsnippet card-template
@@ -11,14 +12,14 @@
   [:#component-root :> any]
   [type answers selected winner cnt text]
   {[self] #(cond-> %
-                   (> (count text) 40) (add-class "tiny-text")
-                   (= :answer type) (add-class "answer")
-                   (= :waiting type) (add-class "waiting")
-                   selected (add-class "selected")
-                   winner (add-class "winner")) 
+                   (> (count text) 40) ((add-class "tiny-text"))
+                   (= :answer type) ((add-class "answer"))
+                   (= :waiting type) ((add-class "waiting"))
+                   selected ((add-class "selected"))
+                   winner ((add-class "winner")))
    [:.content] (content (if (= :waiting type)
                           (gstring/format "Waiting on %d more..." cnt)
-                          text))
+                          (str/replace text #"\[\]" "_______")))
    [:.instructions] (if (or (not= type :prompt)
                             (< answers 2))
                       (constantly nil)

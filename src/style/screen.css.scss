@@ -48,4 +48,17 @@
 // Scratchpad: a CSS playground or "inbox" to be refactored later.
 // =======================================================================
 
+.data-text {
+  font-family: 'Source Code Pro', Menlo, Consolas, Monaco, monospace;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: .8em;
+  color: $secondary-color;
+}
 
+hr {
+  border: none;
+  height: 1px;
+  background: $secondary-color;
+  margin: 15px 0;
+}
