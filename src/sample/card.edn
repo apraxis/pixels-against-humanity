@@ -1,0 +1,64 @@
+{:type :prompt
+ :answers 1
+ :text "What's there a ton of in Heaven?"}
+
+{:type :prompt
+ :answers 2
+ :text "That's right I killed []. How, you ask? []"}
+
+{:type :prompt
+ :answers 1
+ :text "Hannah Montana struggled with [] for the first time."}
+
+{:type :prompt
+ :answers 1
+ :text "[] kid-tested mother-approved."}
+
+{:type :prompt
+ :answers 1
+ :text "[]: good to the last drop."}
+
+{:type :prompt
+ :answers 1
+ :text "[]? There's an app for that."}
+
+{:type :prompt
+ :answers 1
+ :text "[]. Betcha can't have just one."}
+
+{:type :prompt
+ :answers 1
+ :text "[]. High five bro."}
+
+{:type :prompt
+ :answers 1
+ :text "[]. It's a trap!"}
+
+{:type :prompt
+ :answers 1
+ :text "[]. That's how I want to die."}
+
+{:type :prompt
+ :answers 1
+ :text "(Draw 2, Pick 3) [] + [] = []."}
+
+{:type :prompt
+ :answers 1
+ :text "When the United States raced the Soviet Union to the moon, the Mexican government funneled millions of pesos into research on []."}
+
+{:type :answer
+ :text "Christopher Walken."}
+
+{:type :answer
+ :selected true
+ :text "Lance Armstrong's missing testicle."}
+
+{:type :answer
+ :winner true
+ :text "Lance Armstrong's missing testicle."}
+
+{:type :waiting
+ :count 1}
+
+{:type :waiting
+ :count 2}

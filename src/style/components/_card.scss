@@ -9,6 +9,11 @@
     @extend h3;
     line-height: 1.3em;
   }
+  &.tiny-text {
+    .content {
+      font-size: 1em;
+    }
+  }
   &.waiting {
     background: $charcoal;
     border-color: $charcoal;
