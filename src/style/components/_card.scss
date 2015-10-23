@@ -51,7 +51,7 @@
   &.selected {
     border-color: $primary-color;
     &:after {
-      content: "choose";
+      content: "played";
       position: absolute;
       background: $primary-color;
       color: #fff;
@@ -120,17 +120,53 @@
 }
 
 .cards {
+  text-align: center;
   .card {
     display: inline-block;
-    margin-right: 20px;
+    margin: 0 10px 20px 10px;
     vertical-align: top;
-  }
-  &.pile {
-    .card {
-      font-size: .6em !important;
-      height: 180px;
-      width: 140px;
+    font-size: .6em !important;
+    height: 180px;
+    width: 140px;
+    .instructions {
+      display: none;
     }
   }
 }
 
+// TODO: move this to another file (a layout file?)
+.prompt-and-answers {
+  margin: 20px 0;
+  .prompt {
+    .prompt-label {
+      display: none;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .card {
+      margin: 0 auto 20px;
+    }
+  }
+  .cards {
+    .card.answer {
+      @include transition(.2s);
+      &:hover {
+        @include scale(1.1);
+        border-color: $primary-color;
+      }
+      &.selected, &.winner {
+        &:hover {
+          @include scale(1);
+        }
+      }
+    }
+  }
+  &.user-is-tzar {
+    .prompt-label {
+      display: block;
+    }
+    .cards .card.answer:hover {
+      border-color: $success-color;
+    }
+  }
+}

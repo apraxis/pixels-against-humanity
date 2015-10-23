@@ -1,0 +1,50 @@
+{:prompt {:text "What's there a ton of in Heaven?"}
+ :answers []
+ :waiting-count 3
+ :user-is-tzar true}
+
+{:prompt {:text "What's there a ton of in Heaven?"}
+ :answers [{:text "Christopher Walken"}]
+ :waiting-count 2
+ :user-is-tzar true}
+
+{:prompt {:text "What's there a ton of in Heaven?"}
+ :answers [{:text "Christopher Walken"}
+           {:text "Sheep's milk"}
+           {:text "Nicolas Cage"}]
+ :waiting-count 0
+ :user-is-tzar true}
+
+{:prompt {:text "What's there a ton of in Heaven?"}
+ :answers [{:text "Christopher Walken"}
+           {:text "Sheep's milk"}
+           {:text "Nicolas Cage"
+            :winner true}]
+ :waiting-count 0
+ :user-is-tzar true}
+
+{:prompt {:text "What's there a ton of in Heaven?"}
+ :answers [{:text "Lance Armstrong's missing testicle."}
+           {:text "Nicolas Cage"}
+           {:text "Pee Wee Herman"}]
+ :user-is-tzar false}
+
+{:prompt {:text "What's there a ton of in Heaven?"}
+ :answers [{:text "Lance Armstrong's missing testicle."}
+           {:text "Nicolas Cage"
+            :selected true}
+           {:text "Pee Wee Herman"}]
+ :user-is-tzar false}
+
+{:prompt {:text "What's there a ton of in Heaven?"}
+ :answers [{:text "Lance Armstrong's missing testicle."}
+           {:text "Nicolas Cage"
+            :winner true}
+           {:text "Pee Wee Herman"}]
+ :user-is-tzar false}
+
+{:prompt {:text "Nicolas Cage"
+          :winner true}
+ :answers [{:text "Lance Armstrong's missing testicle."}
+           {:text "Pee Wee Herman"}]
+ :user-is-tzar false}
