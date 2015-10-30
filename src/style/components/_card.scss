@@ -8,6 +8,7 @@
   .content {
     @extend h3;
     line-height: 1.3em;
+    text-align: left;
   }
   .instructions {
     position: absolute;
@@ -148,25 +149,33 @@
     }
   }
   .cards {
+    max-width: 650px;
+    margin: 50px auto;
     .card.answer {
       @include transition(.2s);
-      &:hover {
+      &.selected {
+        border-color: $primary-color;
+      }
+      &.winner {
+        border-color: $success-color;
+      }
+    }
+    &.select-to-play {
+      .card.answer:hover {
         @include scale(1.1);
         border-color: $primary-color;
       }
-      &.selected, &.winner {
-        &:hover {
-          @include scale(1);
-        }
+    }
+    &.select-winner {
+      .card.answer:hover {
+        @include scale(1.1);
+        border-color: $success-color;
       }
     }
   }
   &.user-is-tzar {
     .prompt-label {
       display: block;
-    }
-    .cards .card.answer:hover {
-      border-color: $success-color;
     }
   }
 }
