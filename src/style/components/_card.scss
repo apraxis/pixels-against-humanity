@@ -179,3 +179,38 @@
     }
   }
 }
+
+.prompt-off-screen {
+  @include transition(.3s);
+  @include box-shadow(0 1px 20px rgba(0,0,0,1));
+  font-size: 0.8em;
+  position: fixed;
+  width: 100%;
+  top: -100px;
+  z-index: 100;
+  background: #000;
+  border-bottom: 1px solid $oil;
+  .prompt-label {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .card {
+    border: none;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: .4em;
+    .content {
+      text-align: center;
+      width: auto;
+      margin-bottom: 0;
+      line-height: 1em;
+    }
+    .instructions {
+      display: none;
+    }
+  }
+  &.show {
+    top: 0;
+  }
+}
+
