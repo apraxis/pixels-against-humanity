@@ -11,7 +11,7 @@
   "build/structure/components/card/index.html"
   [:#component-root :> any]
   [type answers selected winner cnt text]
-  {[self] #(cond-> %
+  {[root] #(cond-> %
                    (> (count text) 40) ((add-class "tiny-text"))
                    (= :answer type) ((add-class "answer"))
                    (= :waiting type) ((add-class "waiting"))
