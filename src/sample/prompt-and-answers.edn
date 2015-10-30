@@ -26,6 +26,10 @@
 {:prompt {:text "What's there a ton of in Heaven?"}
  :answers [{:text "Lance Armstrong's missing testicle."}
            {:text "Nicolas Cage"}
+           {:text "Tweeting."}
+           {:text "72 virgins."}
+           {:text "8 oz. of sweet Mexican black-tar heroin."}
+           {:text "A 55-gallon drum of lube."}
            {:text "Pee Wee Herman"}]
  :user-is-tzar false}
 
@@ -33,6 +37,10 @@
  :answers [{:text "Lance Armstrong's missing testicle."}
            {:text "Nicolas Cage"
             :selected true}
+           {:text "Tweeting."}
+           {:text "72 virgins."}
+           {:text "8 oz. of sweet Mexican black-tar heroin."}
+           {:text "A 55-gallon drum of lube."}
            {:text "Pee Wee Herman"}]
  :user-is-tzar false}
 
@@ -40,11 +48,20 @@
  :answers [{:text "Lance Armstrong's missing testicle."}
            {:text "Nicolas Cage"
             :winner true}
+           {:text "Tweeting."}
+           {:text "72 virgins."}
+           {:text "8 oz. of sweet Mexican black-tar heroin."}
+           {:text "A 55-gallon drum of lube."}
            {:text "Pee Wee Herman"}]
  :user-is-tzar false}
 
 {:prompt {:text "Nicolas Cage"
           :winner true}
  :answers [{:text "Lance Armstrong's missing testicle."}
+           {:text "A bag of magic beans."}
+           {:text "Tweeting."}
+           {:text "72 virgins."}
+           {:text "8 oz. of sweet Mexican black-tar heroin."}
+           {:text "A 55-gallon drum of lube."}
            {:text "Pee Wee Herman"}]
  :user-is-tzar false}
