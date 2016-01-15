@@ -8,7 +8,7 @@
   (:require-macros [apraxis.client.template :refer [defsnippet]]))
 
 (defsnippet card-template
-  "build/structure/components/card/index.html"
+  "card"
   [:#component-root :> any]
   [type answers selected winner cnt text]
   {[root] #(cond-> %

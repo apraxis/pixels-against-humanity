@@ -5,7 +5,7 @@
   (:require-macros [apraxis.client.template :refer [defsnippet]]))
 
 (defsnippet prompt-and-answers-template
-  "build/structure/components/prompt-and-answers/index.html"
+  "prompt-and-answers"
   [:#component-root :> any]
   [{:keys [user-is-tzar prompt answers waiting-count]}]
   {[root] (add-class (when user-is-tzar "user-is-tzar"))

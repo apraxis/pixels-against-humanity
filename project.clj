@@ -11,7 +11,7 @@
                  [org.slf4j/jcl-over-slf4j "1.7.7"]
                  [org.slf4j/log4j-over-slf4j "1.7.7"]
                  [om "0.8.0-alpha1"]
-                 [kioo "0.4.1-SNAPSHOT" :exclusions [org.clojure/tools.reader com.keminglabs/cljx]]]
+                 [kioo "0.4.1" :exclusions [org.clojure/tools.reader com.keminglabs/cljx]]]
   :source-paths ["src/service" "src/client/components"]
   :resource-paths ["target/middleman"
                    "target/apraxis-js"
@@ -27,5 +27,4 @@
                                    ;;:source-map "target/apraxis-js/pixels_against_humanity_client.js.map"
                                    :pretty-print true
                                    :preamble ["react/react.js"]
-                                   :externs ["react/externs/react.js"]
-                                   }}]})
+                                   :externs ["react/externs/react.js"]}}]})

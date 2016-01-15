@@ -5,7 +5,7 @@
   (:require-macros [apraxis.client.template :refer [defsnippet]]))
 
 (defsnippet test-template
-  "build/structure/components/test/index.html"
+  "test"
   [:#component-root :> any]
   [val]
   {[:.content] (content (pr-str val))}
