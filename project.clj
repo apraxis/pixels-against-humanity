@@ -10,21 +10,11 @@
                  [org.slf4j/jul-to-slf4j "1.7.7"]
                  [org.slf4j/jcl-over-slf4j "1.7.7"]
                  [org.slf4j/log4j-over-slf4j "1.7.7"]
-                 [om "0.8.0-alpha1"]
+                 [org.omcljs/om "0.9.0"]
                  [kioo "0.4.1" :exclusions [org.clojure/tools.reader com.keminglabs/cljx]]]
   :source-paths ["src/service" "src/client/components"]
   :resource-paths ["target/middleman"
                    "target/apraxis-js"
                    "../apraxis/resources"
                    "resources"]
-  :plugins [[org.apraxis/apraxis "0.0.1-SNAPSHOT"]]
-  :cljsbuild {:builds [{:id "dev"
-                        :source-paths ["src/client/components" "../apraxis/src/cljs"]
-                        :compiler {:output-to "target/apraxis-js/js/pixels_against_humanity_client.js"
-                                   :output-dir "target/apraxis-js/js/out"
-                                        ;:libs ["target/middleman/build"]
-                                   :optimizations :none
-                                   ;;:source-map "target/apraxis-js/pixels_against_humanity_client.js.map"
-                                   :pretty-print true
-                                   :preamble ["react/react.js"]
-                                   :externs ["react/externs/react.js"]}}]})
+  :plugins [[org.apraxis/apraxis "0.0.1-SNAPSHOT"]])
