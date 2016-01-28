@@ -4,7 +4,6 @@
             [io.pedestal.http.body-params :as body-params]
             [io.pedestal.http.route.definition :refer [expand-routes]]
             [io.pedestal.http.ring-middlewares :refer [resource]]
-            [io.pedestal.interceptor :refer [defbefore]]
             [apraxis.service :as aservice]
             [ring.util.response :as ring-resp]
             [clojure.string :as str]))

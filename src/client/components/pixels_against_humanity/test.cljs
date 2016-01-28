@@ -2,14 +2,11 @@
   (:require [kioo.om :refer [content]]
             [om.core :as om]
             [om.dom :as dom])
-  (:require-macros [apraxis.client.template :refer [defsnippet]]))
+  (:require-macros [apraxis.client.template :refer [defroottemplate]]))
 
-(defsnippet test-template
-  "test"
-  [:#component-root :> any]
+(defroottemplate test-template
   [val]
-  {[:.content] (content (pr-str val))}
-  {:resource-wrapper :mini-html})
+  [:.content] (content (pr-str val)))
 
 (defn ^:export test-component
   [props owner]

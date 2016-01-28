@@ -5,30 +5,27 @@
             [goog.string.format]
             [goog.string :as gstring]
             [clojure.string :as str])
-  (:require-macros [apraxis.client.template :refer [defsnippet]]))
+  (:require-macros [apraxis.client.template :refer [defroottemplate]]))
 
-(defsnippet card-template
-  "card"
-  [:#component-root :> any]
+(defroottemplate card-template
   [type answers selected winner cnt text]
-  {[root] #(cond-> %
-                   (> (count text) 40) ((add-class "tiny-text"))
-                   (= :answer type) ((add-class "answer"))
-                   (= :waiting type) ((add-class "waiting"))
-                   selected ((add-class "selected"))
-                   winner ((add-class "winner")))
-   [:.content] (content (if (= :waiting type)
-                          (gstring/format "Waiting on %d more..." cnt)
-                          (str/replace text #"\[\]" "_______")))
-   [:.instructions] (if (or (not= type :prompt)
-                            (< answers 2))
-                      (constantly nil)
-                      identity)
-   [:.instructions :.pick :span] (content answers)
-   [:.instructions :.draw] (if (= answers 3)
-                             identity
-                             (constantly nil))}
-  {:resource-wrapper :mini-html})
+  [root] #(cond-> %
+            (> (count text) 40) ((add-class "tiny-text"))
+            (= :answer type) ((add-class "answer"))
+            (= :waiting type) ((add-class "waiting"))
+            selected ((add-class "selected"))
+            winner ((add-class "winner")))
+  [:.content] (content (if (= :waiting type)
+                         (gstring/format "Waiting on %d more..." cnt)
+                         (str/replace text #"\[\]" "_______")))
+  [:.instructions] (if (or (not= type :prompt)
+                           (< answers 2))
+                     (constantly nil)
+                     identity)
+  [:.instructions :.pick :span] (content answers)
+  [:.instructions :.draw] (if (= answers 3)
+                            identity
+                            (constantly nil)))
 
 (defn ^:export card-component
   [{:keys [type answers selected winner count text] :as props} owner]
