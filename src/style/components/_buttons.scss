@@ -7,7 +7,7 @@
 
 .button {
   border-radius: 6px;
-  padding: 1em 2em;
+  padding: .75em 1em;
   display: inline-block;
   background: transparent;
   border: 3px solid #fff;
@@ -53,4 +53,11 @@
       @include icon-font($child);
     }
   }
+  .buttons & {
+    font-size: .85em;
+  }
+}
+
+.buttons {
+  margin-bottom: 1.5em;
 }

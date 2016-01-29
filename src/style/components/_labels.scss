@@ -7,10 +7,25 @@
   display: inline-block;
   line-height: 1em;
   background-color: $charcoal;
+  vertical-align: middle;
   &.alert {
     background-color: $warning-color;
   }
   &.success {
     background-color: $success-color;
+  }
+  &.stat {
+    background: white;
+    color: black;
+    width: 100px;
+    height: 85px;
+    .title {
+      line-height: 1.5em;
+      display: block;
+    }
+    .value {
+      line-height: 1em;
+      font-size: 2em;
+    }
   }
 }

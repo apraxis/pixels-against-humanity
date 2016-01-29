@@ -46,6 +46,13 @@ span {
   }
 }
 
+.br {
+  display: block;
+  }
+
+  .not-uppercase {
+    text-transform: none;
+  }
 // apply global border-radius ($corner-radius)
 .radius {
   border-radius: $corner-radius;
