@@ -53,11 +53,30 @@
       @include icon-font($child);
     }
   }
+  &.large {
+    padding: 1.5em 2em;
+    &.wide {
+      padding: 1.5em 3em;
+    }
+  }
   .buttons & {
     font-size: .85em;
+  }
+  .stacked & {
+    margin: 0 0 1.5em 0;
+  }
+  &:disabled {
+    color: $charcoal;
+    border-color: $charcoal;
   }
 }
 
 .buttons {
   margin-bottom: 1.5em;
+}
+
+.cancel {
+  text-decoration: none;
+  color: $charcoal;
+  text-transform: uppercase;
 }

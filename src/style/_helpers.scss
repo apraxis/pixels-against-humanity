@@ -23,6 +23,10 @@
   @include pie-clearfix;
 }
 
+.transparent {
+  opacity: 0;
+}
+
 // floats
 @each $direction in right, left {
   .float-#{$direction} {

@@ -1,0 +1,12 @@
+.container
+  .inputs.text-center
+    %label.game-id
+      %span.transparent Game ID
+      %input(type="text" value="XB54M9" placeholder="Game Id")
+    %label.name
+      %span.transparent Your Name
+      %input(type="text" placeholder="Your Name")
+  .buttons.stacked.text-center
+    %button.button.success.large.wide.play(disabled="disabled") Play
+    .block
+      = link_to "cancel", "#!", class: "cancel"
