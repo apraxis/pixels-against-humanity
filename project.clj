@@ -17,4 +17,4 @@
                    "target/apraxis-js"
                    "../apraxis/resources"
                    "resources"]
-  :plugins [[org.apraxis/apraxis "0.0.1-SNAPSHOT"]])
+  :plugins [[org.apraxis/apraxis "0.0.2-SNAPSHOT"]])
